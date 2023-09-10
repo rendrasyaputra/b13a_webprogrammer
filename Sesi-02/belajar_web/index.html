@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/pf.png">
+  <title>
+     Rendra Alpani Syaputra
+  </title>
+</head>
+<body>
+  <div id="name">
+    <h2>Rendra Alpani Syaputra</h2>
+  </div>
+
+  <div id="social-media">
+    <table border="0">
+    <tr>
+      <td>
+          <a href="https://www.instagram.com/__rendra/" target="_blank">Instagram |</a>
+      </td>
+      <td>
+          <a href="https://www.linkedin.com/in/rendrasyaputra/" target="_blank">Linkedin |</a>
+      </td>
+    </tr>
+  </table>
+  </div>
+
+  <div id="profile">
+    <h2>Profile</h2>
+    <p>I am a graduate of Informatics at Ahmad Dahlan University, I have an interest and ability 
+      in information technology, experience working in a team, and have experience as a practicum 
+      assistant in an Informatics laboratory, I also have experience as a consultant and administration 
+      for new students acceptance at Ahmad Dahlan University.</p>
+  </div>
+
+  <div id="technical-skill">
+    <h2>Technical Skill</h2>
+    <p>1. PHP <br>2. Javascript <br>3. Database</p>
+  </div>
+
+  <div id="education">
+    <h2>Education</h2>
+    <ul>
+      <li>SDN 1 Binut</li>
+      <li>SMPN 12 Binut</li>
+      <li>SMAN 1 Binut</li>
+      <li>Universitas Ahmad Dahlan</li>
+    </ul>
+  </table>
+  </div>
+
+  <div id="contact-me">
+    <h2>Contact Me</h2>
+    <table>
+      <tr>
+        <td>
+          <input type="text" name="mail" id="Mail" placeholder="Input your email" required>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <textarea name="msg" id="Msg" cols="30" rows="5" placeholder="Input your message here!" required></textarea>
+        </td>
+      </tr>
+    </table>
+    <button onclick="simpan()">Simpan</button>
+  </div>
+
+  <script>
+    function simpan() {
+      var email = document.getElementById("Mail").value;
+      var pesan = document.getElementById("Msg").value;
+  
+      if (email === "" || pesan === "") {
+        alert("Email dan pesan harus diisi.");
+        return;
+      }
+  
+      alert("Pesan Berhasil Disimpan!")
+      console.log("Email: " + email);
+      console.log("Pesan: " + pesan);
+    }
+  </script>
+  
+</body>
+</html>

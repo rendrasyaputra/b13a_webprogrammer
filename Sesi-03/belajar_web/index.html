@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Belajar CSS</title>
+    <style>
+        h1{
+            background-color: red;
+            padding: 10px;
+        }
+        .hallo{
+            margin-left: 25px;
+        }
+        #world{
+            color: yellow;
+        }
+        @media screen and (max-width : 600px) {
+            h1{
+                background-color: aqua;
+                display: none;
+            }
+            p{
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 style="background-color: blue; color: red; padding-left: 10px;">Belajar CSS</h1>
+    <h1 class="hallo" id="world">Belajar CSS NIH BOS!!!</h1>
+    <p>Hello Layout responsive</p>
+</body>
+</html>
