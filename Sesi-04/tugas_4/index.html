@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 4 - Algoritma Menghitung luas dan Keliling Lingkaran</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Tugas 4 - Algoritma Menghitung luas dan Keliling Lingkaran</h2>
+    <p>Rumus Menghitung Luas Lingkaran dan Keliling Lingkaran :,<br> <b>*Note : Konstanta phi = 3.14</b></p>
+    <p>1. Luas Lingkaran = phi * jari-jari * jari-jari <br>2. Keliling Lingkaran = 2 * phi * jari-jari</p>
+    <label for="">Masukkan Jari-jari</label>
+    <input type="text" id="jari" placeholder="Masukkan jari-jari"> <br><br>
+    <input type="button" onclick="hitungLuas()" value="Luas">
+    <input type="button" onclick="hitungKeliling()" value="Keliling">
+    
+    <script>
+        function hitungLuas(){
+            // alert("cek luas");
+            var jari = document.getElementById("jari").value;
+            var phi = 3.14;
+
+            if (isNaN(jari) || jari <= 0){
+                alert("Masukkan jari-jari terlebih dahulu");
+            }else{
+                var luas = phi * jari * jari;
+                alert("Luas Lingkaran : " + luas);
+            }
+            // console.log("Luas Lingkaran : " + luas);
+        }
+        function hitungKeliling(){
+            // alert("cek keliling");
+            var jari = document.getElementById("jari").value;
+            var phi = 3.14;
+            
+            if (isNaN(jari) || jari <= 0){
+                alert("Masukkan jari-jari! terlebih dahulu");
+            }else{
+                var keliling = 2 * phi * jari;
+                alert("Keliling Lingkaran : " + keliling);
+            }   
+        }
+    </script>
+</body>
+</html>

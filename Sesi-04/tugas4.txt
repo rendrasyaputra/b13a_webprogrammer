@@ -1,0 +1,18 @@
+Algoritma menghitung luas dan keliling lingkaran
+
+BEGIN
+input jari-jari
+phi = 3.14 (konstanta phi)
+
+//hitung luas lingkaran
+luas = phi * jari-jari * jari-jari
+
+//hitung keliling lingkaran
+keliling = 2 * phi * jari-jari
+
+//Output
+Luas lingkaran: , luas
+Keliling lingkaran: , keliling
+
+END
+
