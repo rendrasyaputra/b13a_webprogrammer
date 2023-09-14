@@ -19,13 +19,13 @@
         function Klik() {
             // alert("test klik");
 
-            var pesan = document.getElementById("pesan").value;
-            var angka = document.getElementById("angka").value;
-            var hasilPesanOl = document.getElementById("hasil");
+            let pesan = document.getElementById("pesan").value;
+            let angka = document.getElementById("angka").value;
+            let hasilPesanOl = document.getElementById("hasil");
             
             hasilPesanOl.innerHTML = "";
 
-            for (var i = 1; i <= angka; i++) {
+            for (let i = 1; i <= angka; i++) {
                 hasilPesanOl.innerHTML += i + ". " + pesan + "<br>";
             }
         }
