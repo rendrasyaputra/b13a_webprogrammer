@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warna Teks Berkedip</title>
+    <style>
+    @keyframes warna1 {
+      0%, 100% { color: black; }
+      50% { color: red; }
+    }
+
+    @keyframes warna2 {
+      0%, 100% { color: black; }
+      50% { color: green; }
+    }
+
+    @keyframes warna3 {
+      0%, 100% { color: black; }
+      50% { color: blue; }
+    }
+
+    </style>
+</head>
+<body>
+  <p id="paragraf1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta incidunt esse, nihil, quod rerum explicabo architecto cumque doloribus minus quibusdam ex ducimus tempore obcaecati quo tenetur molestias magnam exercitationem unde..</p>
+  <p id="paragraf2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta incidunt esse, nihil, quod rerum explicabo architecto cumque doloribus minus quibusdam ex ducimus tempore obcaecati quo tenetur molestias magnam exercitationem unde..</p>
+  <p id="paragraf3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta incidunt esse, nihil, quod rerum explicabo architecto cumque doloribus minus quibusdam ex ducimus tempore obcaecati quo tenetur molestias magnam exercitationem unde..</p>
+
+  <script>
+    var paragraf1 = document.getElementById('paragraf1');
+    var paragraf2 = document.getElementById('paragraf2');
+    var paragraf3 = document.getElementById('paragraf3');
+
+    function ubahwarna() {
+      paragraf1.style.animation = 'warna1 1s infinite';
+      paragraf2.style.animation = 'warna2 1s infinite';
+      paragraf3.style.animation = 'warna3 1s infinite';
+    }
+    ubahwarna();
+  </script>
+</body>
+</html>
